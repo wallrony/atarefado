@@ -258,13 +258,14 @@ class _AddTodoPageState extends State<AddTodoPage> {
   saveTodo(String name, String description, String date) async {
     if (!_addTodoFormKey.currentState.validate()) {
       return;
-    } else if (date.isEmpty) {
+    } else if (date == 'Escolha a data da tarefa *') {
       Toast.show(
         "Você precisa adicionar a data da tarefa!",
         context,
         duration: Toast.LENGTH_LONG,
-        backgroundColor: Colors.white,
-        textColor: Colors.black,
+        backgroundColor: Colors.black,
+        textColor: Colors.white,
+        gravity: Toast.CENTER,
       );
 
       return;

@@ -21,10 +21,13 @@ AppBar makeAppBar(context) {
     title: Stack(
       alignment: Alignment.center,
       children: [
-        Image.asset(
-          'assets/images/atarefado_logo.png',
-          fit: BoxFit.fill,
-          height: 70,
+        Hero(
+          tag: 'splash_atarefado_logo',
+          child: Image.asset(
+            'assets/images/atarefado_logo.png',
+            fit: BoxFit.fill,
+            height: 70,
+          ),
         ),
       ],
     ),

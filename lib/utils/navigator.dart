@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
-push(context, page, { bool replace }) {
-  Navigator.of(context).push(makePageRoute(page));
+push(context, page, { bool replace = false }) {
+  if(replace) {
+    Navigator.of(context).pushReplacement(makePageRoute(page));
+  }
+  else {
+    Navigator.of(context).push(makePageRoute(page));
+  }
 }
 
 makePageRoute(page) {

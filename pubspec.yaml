@@ -17,6 +17,8 @@ dependencies:
   toast: ^0.1.5
   path_provider: ^1.6.8
   flutter_staggered_animations: ^0.1.2
+  introduction_screen: ^1.0.8
+  shared_preferences: ^0.5.7+3
 
 dev_dependencies:
   flutter_test:
@@ -32,6 +34,7 @@ flutter:
     - assets/images/atarefado_logo.png
     - assets/images/not_realized_todo.png
     - assets/images/realized_todo.png
+    - assets/images/todo_example.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

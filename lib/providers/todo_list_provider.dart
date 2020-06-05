@@ -17,7 +17,6 @@ class TODOListProvider with ChangeNotifier {
 
       list.sort((a, b) {
         var firstDateSplit = a.date.split('/');
-        ;
         var secondDateSplit = b.date.split('/');
 
         DateTime dateTime1 = DateTime.parse(

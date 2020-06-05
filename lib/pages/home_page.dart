@@ -109,42 +109,42 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         ),
       ),
       bottomNavigationBar: Container(
-          color: Colors.black12,
-          child: Stack(
-            alignment: Alignment.bottomRight,
-            children: [
-              Container(
-                padding:
-                    EdgeInsets.only(left: 16, right: 16, bottom: 8, top: 12),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(48.0),
-                    topRight: Radius.circular(48.0),
-                  ),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    for (var i = 0; i < _navigatorItens.length; i++)
-                      bottomBarItem(
-                        label: _navigatorItens[i]['label'],
-                        icon: _navigatorItens[i]['icon'],
-                        filter: _navigatorItens[i]['query_filter'],
-                        index: i,
-                      ),
-                  ],
+        color: Colors.black12,
+        child: Stack(
+          alignment: Alignment.bottomRight,
+          children: [
+            Container(
+              padding: EdgeInsets.only(left: 16, right: 16, bottom: 8, top: 12),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(48.0),
+                  topRight: Radius.circular(48.0),
                 ),
               ),
-              Container(
-                margin: EdgeInsets.only(bottom: 85, right: 10),
-                child: FloatingActionButton(
-                  onPressed: addTODO,
-                  child: Icon(Icons.add, color: Colors.white),
-                ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  for (var i = 0; i < _navigatorItens.length; i++)
+                    bottomBarItem(
+                      label: _navigatorItens[i]['label'],
+                      icon: _navigatorItens[i]['icon'],
+                      filter: _navigatorItens[i]['query_filter'],
+                      index: i,
+                    ),
+                ],
               ),
-            ],
-          )),
+            ),
+            Container(
+              margin: EdgeInsets.only(bottom: 85, right: 10),
+              child: FloatingActionButton(
+                onPressed: addTODO,
+                child: Icon(Icons.add, color: Colors.white),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 

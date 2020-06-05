@@ -13,10 +13,6 @@ Um projeto feito em Flutter para registro de tarefas.
   <li>Utilização de DatePicker Dialog;</li>
   <li>Utilização de Toast para mensagens simples;</li>
   <li>Alteração da cor das barras do sistema (navigation bar color & status bar color);</li>
-</ul>
-
-<h2>O que falta?</h2>
-<ul>
   <li>Tela de Introdução (ensinando sobre o app);</li>
   <li>SplashScreen;</li>
   <li>Alterar a logo do aplicativo;</li>

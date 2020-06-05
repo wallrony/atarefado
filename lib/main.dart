@@ -1,4 +1,5 @@
-import 'package:afazeres/pages/home_page.dart';
+import 'package:afazeres/pages/introduction_page.dart';
+import 'package:afazeres/pages/splash_screen.dart';
 import 'package:afazeres/providers/todo_list_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -38,7 +39,7 @@ class _MyAppState extends State<MyApp> {
         ),
         debugShowCheckedModeBanner: false,
         home: SafeArea(
-          child: HomePage(),
+          child: SplashScreen(),
         ),
       ),
     );
